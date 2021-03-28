@@ -1,0 +1,217 @@
+/**----------INSTALLATION DES POLICES--------**/
+@font-face{
+    font-family:ballpark;
+    src: url(polices/ballpark.woff);    
+}
+@font-face{
+    font-family:dayrom;
+    src:url(polices/dayrom.woff)
+}
+
+
+body{
+    background-color: rgb(250, 239, 190);
+    background-image: url(images/fond_jaune.png);
+    font-family: sans-serif;
+    display:block;
+    margin: 0;
+}
+
+
+/**---STYLER LA BARRE DU NAVIGATION ET LE HEADER----**/
+header{
+    display:flex;
+    justify-content: space-between;
+    font-family: dayrom;
+}
+h1{
+    font-family:ballpark;
+    font-size:2.3rem; 
+    margin-bottom: 0;
+}
+nav{  margin-top: 60px; }                                                                               
+
+ul{ margin-right:20px; }
+
+header > img,h1{
+    display: inline-block;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+li > a:hover{
+    color: brown;
+    border-bottom:3px solid brown;
+} 
+li > a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    margin: 15px;
+    padding-left:25px;
+}
+
+
+/**STYLER L'IMAGES DE SAN FRANSISCO**/
+.div-sf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.div-sf .img-sf{
+    width:95%;
+    max-height:220px ;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/**-----AJOUTER L'OVERLAY DU TEXTE ET BUTTON-----**/
+.div-sf .text-sf{
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 95%; 
+    align-items: center;
+}
+
+.text-sf{
+    display: inline-block;
+    font-family: sans-serif;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+
+}
+.text-sf{
+    display: flex;
+    justify-content: space-between;
+}
+.text-sf>p{
+    margin-left: 5px;
+}
+
+/*----------EFFET DE LA BOUTON--------------*/
+.article-button{
+    background-color: rgb(223, 60, 60);
+    margin-right: 10px;
+    width: 130px;
+    padding: 8px;
+    border-radius: 8px;
+    
+}
+
+.article-button:hover{
+    cursor: pointer;
+}
+.article-button > a{
+    color: white;
+    text-decoration: none;
+}
+
+/**----------STYLER LA SECTION----------**/
+
+section{
+    width: 1281.55px;
+    margin-left: 35px;
+    display:grid;
+    grid-template-columns: 74% 1% 25%; /**DEUX COLONNES DU ASIDE ET ARTICLE**/
+}
+
+
+/**-------STYLER L'ARTICLE----------**/
+
+article > h2,img{
+    display: inline-block;
+}
+article>h2{
+    margin:0;
+    color: rgb(105, 102, 102);
+    font-family: dayrom;
+}
+#vitae{
+    color: brown;
+    text-decoration: underline;
+    font-weight:bold ;
+}
+
+
+/**-----------STYLER ASIDE--------**/
+aside > h2,img,div{
+    text-align: center;
+    font-family: dayrom;
+}
+aside{
+    background-color: rgb(83, 74, 74);
+    color: white;
+}
+aside>p{
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+aside{
+    border-radius: 10px;
+    height: 470px;
+}
+aside> h2,p{
+    padding: 5px;
+}
+aside>h2{
+    font-size: 1.4rem;
+}
+.social-media-images{
+    display: flex;
+    justify-content: space-around;
+}
+.fleche > img{
+    
+    margin-top:200px ;
+}
+.ico-top{
+    margin-left: calc(1300px/2);
+}
+
+/**---------STYLER LE FOOTER------------**/
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,calc(1281.55px/3));
+    margin-left: 40px;
+}
+footer>div{
+    text-align: start;
+}
+.mes-tweet>h2,p{
+    padding:0;
+}
+.mes-photos > img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black; 
+}
+.list-item{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+.mes-amis > ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0;
+    grid-row-gap: 5px;
+}
+
+
+    
+
+
+
+
